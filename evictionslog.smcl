@@ -1,0 +1,605 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/sinclaireschuetze/Desktop/EvictionProject/evictionslog.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}12 May 2021, 18:45:23
+
+{com}. tab(city), gen (cityDV)
+
+                      {txt}city {c |}      Freq.     Percent        Cum.
+{hline 27}{c +}{hline 35}
+                Austin, TX {c |}{res}      2,116        1.14        1.14
+{txt}                Boston, MA {c |}{res}      7,199        3.87        5.01
+{txt}            Bridgeport, CT {c |}{res}      4,876        2.62        7.63
+{txt}            Charleston, SC {c |}{res}      2,001        1.08        8.70
+{txt}            Cincinnati, OH {c |}{res}      5,129        2.76       11.46
+{txt}             Cleveland, OH {c |}{res}      4,094        2.20       13.66
+{txt}              Columbus, OH {c |}{res}      6,555        3.52       17.18
+{txt}     Dallas-Fort Worth, TX {c |}{res}     23,552       12.66       29.84
+{txt}           Gainesville, FL {c |}{res}      1,311        0.70       30.54
+{txt}            Greenville, SC {c |}{res}      2,576        1.38       31.92
+{txt}              Hartford, CT {c |}{res}      5,175        2.78       34.71
+{txt}               Houston, TX {c |}{res}     19,642       10.55       45.26
+{txt}          Indianapolis, IN {c |}{res}      5,175        2.78       48.04
+{txt}          Jacksonville, FL {c |}{res}      4,025        2.16       50.20
+{txt}           Kansas City, MO {c |}{res}      4,600        2.47       52.68
+{txt}               Memphis, TN {c |}{res}      5,106        2.74       55.42
+{txt}             Milwaukee, WI {c |}{res}      6,877        3.70       59.12
+{txt}Minneapolis-Saint Paul, MN {c |}{res}     10,051        5.40       64.52
+{txt}              New York, NY {c |}{res}      6,923        3.72       68.24
+{txt}          Philadelphia, PA {c |}{res}      8,855        4.76       72.99
+{txt}               Phoenix, AZ {c |}{res}     21,091       11.33       84.33
+{txt}            Pittsburgh, PA {c |}{res}      3,358        1.80       86.13
+{txt}              Richmond, VA {c |}{res}        920        0.49       86.63
+{txt}            South Bend, IN {c |}{res}      1,748        0.94       87.57
+{txt}              St Louis, MO {c |}{res}      7,038        3.78       91.35
+{txt}                 Tampa, FL {c |}{res}     13,064        7.02       98.37
+{txt}            Wilmington, DE {c |}{res}      3,036        1.63      100.00
+{txt}{hline 27}{c +}{hline 35}
+                     Total {c |}{res}    186,093      100.00
+
+{com}. reg filings_2020 After_Mor white_maj latinx_maj black_maj i.realDate cityDV1-cityDV27
+{p 0 6 2}{txt}note: cityDV27 omitted because of collinearity{p_end}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}   186,093
+{txt}{hline 13}{c +}{hline 34}   F(52, 186040)   = {res}   110.94
+{txt}       Model {c |} {res} 38642.8475        52  743.131683   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 1246152.16   186,040  6.69830229   {txt}R-squared       ={res}    0.0301
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0298
+{txt}       Total {c |} {res} 1284795.01   186,092  6.90408511   {txt}Root MSE        =   {res} 2.5881
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}filings_2020{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 3}After_Mor {c |}{col 14}{res}{space 2} .4132912{col 26}{space 2} .0251025{col 37}{space 1}   16.46{col 46}{space 3}0.000{col 54}{space 4} .3640908{col 67}{space 3} .4624916
+{txt}{space 3}white_maj {c |}{col 14}{res}{space 2}-.2519006{col 26}{space 2} .0161628{col 37}{space 1}  -15.59{col 46}{space 3}0.000{col 54}{space 4}-.2835793{col 67}{space 3}-.2202219
+{txt}{space 2}latinx_maj {c |}{col 14}{res}{space 2} .1214694{col 26}{space 2} .0229394{col 37}{space 1}    5.30{col 46}{space 3}0.000{col 54}{space 4} .0765087{col 67}{space 3} .1664301
+{txt}{space 3}black_maj {c |}{col 14}{res}{space 2} .1808731{col 26}{space 2} .0220259{col 37}{space 1}    8.21{col 46}{space 3}0.000{col 54}{space 4} .1377029{col 67}{space 3} .2240433
+{txt}{space 12} {c |}
+{space 4}realDate {c |}
+{space 8}405  {c |}{col 14}{res}{space 2}-.0316401{col 26}{space 2} .0406908{col 37}{space 1}   -0.78{col 46}{space 3}0.437{col 54}{space 4}-.1113931{col 67}{space 3} .0481129
+{txt}{space 8}412  {c |}{col 14}{res}{space 2}   .05055{col 26}{space 2} .0406908{col 37}{space 1}    1.24{col 46}{space 3}0.214{col 54}{space 4} -.029203{col 67}{space 3}  .130303
+{txt}{space 8}419  {c |}{col 14}{res}{space 2} .0501792{col 26}{space 2} .0406908{col 37}{space 1}    1.23{col 46}{space 3}0.218{col 54}{space 4}-.0295738{col 67}{space 3} .1299322
+{txt}{space 8}426  {c |}{col 14}{res}{space 2} .0154493{col 26}{space 2} .0406908{col 37}{space 1}    0.38{col 46}{space 3}0.704{col 54}{space 4}-.0643038{col 67}{space 3} .0952023
+{txt}{space 8}503  {c |}{col 14}{res}{space 2} .0059325{col 26}{space 2} .0406908{col 37}{space 1}    0.15{col 46}{space 3}0.884{col 54}{space 4}-.0738205{col 67}{space 3} .0856855
+{txt}{space 8}510  {c |}{col 14}{res}{space 2}  .088617{col 26}{space 2} .0406908{col 37}{space 1}    2.18{col 46}{space 3}0.029{col 54}{space 4}  .008864{col 67}{space 3}   .16837
+{txt}{space 8}517  {c |}{col 14}{res}{space 2} .1568685{col 26}{space 2} .0406976{col 37}{space 1}    3.85{col 46}{space 3}0.000{col 54}{space 4} .0771023{col 67}{space 3} .2366348
+{txt}{space 8}524  {c |}{col 14}{res}{space 2}-.0008602{col 26}{space 2} .0412639{col 37}{space 1}   -0.02{col 46}{space 3}0.983{col 54}{space 4}-.0817366{col 67}{space 3} .0800161
+{txt}{space 8}531  {c |}{col 14}{res}{space 2}  .003549{col 26}{space 2}  .041563{col 37}{space 1}    0.09{col 46}{space 3}0.932{col 54}{space 4}-.0779134{col 67}{space 3} .0850115
+{txt}{space 8}607  {c |}{col 14}{res}{space 2} .1095928{col 26}{space 2}  .041563{col 37}{space 1}    2.64{col 46}{space 3}0.008{col 54}{space 4} .0281303{col 67}{space 3} .1910552
+{txt}{space 8}614  {c |}{col 14}{res}{space 2} .2052546{col 26}{space 2}  .041563{col 37}{space 1}    4.94{col 46}{space 3}0.000{col 54}{space 4} .1237922{col 67}{space 3} .2867171
+{txt}{space 8}621  {c |}{col 14}{res}{space 2}  .147289{col 26}{space 2}  .041563{col 37}{space 1}    3.54{col 46}{space 3}0.000{col 54}{space 4} .0658265{col 67}{space 3} .2287514
+{txt}{space 8}628  {c |}{col 14}{res}{space 2}-.0107879{col 26}{space 2}  .041563{col 37}{space 1}   -0.26{col 46}{space 3}0.795{col 54}{space 4}-.0922504{col 67}{space 3} .0706746
+{txt}{space 8}705  {c |}{col 14}{res}{space 2} .0844346{col 26}{space 2} .0416484{col 37}{space 1}    2.03{col 46}{space 3}0.043{col 54}{space 4} .0028048{col 67}{space 3} .1660645
+{txt}{space 8}712  {c |}{col 14}{res}{space 2} .2151972{col 26}{space 2} .0416484{col 37}{space 1}    5.17{col 46}{space 3}0.000{col 54}{space 4} .1335674{col 67}{space 3}  .296827
+{txt}{space 8}719  {c |}{col 14}{res}{space 2} .2075344{col 26}{space 2} .0416484{col 37}{space 1}    4.98{col 46}{space 3}0.000{col 54}{space 4} .1259046{col 67}{space 3} .2891642
+{txt}{space 8}726  {c |}{col 14}{res}{space 2} .2704438{col 26}{space 2} .0416484{col 37}{space 1}    6.49{col 46}{space 3}0.000{col 54}{space 4}  .188814{col 67}{space 3} .3520736
+{txt}{space 8}802  {c |}{col 14}{res}{space 2} .1453665{col 26}{space 2} .0416484{col 37}{space 1}    3.49{col 46}{space 3}0.000{col 54}{space 4} .0637367{col 67}{space 3} .2269964
+{txt}{space 8}809  {c |}{col 14}{res}{space 2} .3753752{col 26}{space 2} .0416484{col 37}{space 1}    9.01{col 46}{space 3}0.000{col 54}{space 4} .2937454{col 67}{space 3}  .457005
+{txt}{space 8}816  {c |}{col 14}{res}{space 2}  .552436{col 26}{space 2} .0418574{col 37}{space 1}   13.20{col 46}{space 3}0.000{col 54}{space 4} .4703965{col 67}{space 3} .6344756
+{txt}{space 8}823  {c |}{col 14}{res}{space 2} .7295464{col 26}{space 2} .0418574{col 37}{space 1}   17.43{col 46}{space 3}0.000{col 54}{space 4} .6475069{col 67}{space 3} .8115859
+{txt}{space 8}830  {c |}{col 14}{res}{space 2} .7627932{col 26}{space 2} .0418574{col 37}{space 1}   18.22{col 46}{space 3}0.000{col 54}{space 4} .6807537{col 67}{space 3} .8448328
+{txt}{space 12} {c |}
+{space 5}cityDV1 {c |}{col 14}{res}{space 2}-.2666496{col 26}{space 2} .0738006{col 37}{space 1}   -3.61{col 46}{space 3}0.000{col 54}{space 4} -.411297{col 67}{space 3}-.1220022
+{txt}{space 5}cityDV2 {c |}{col 14}{res}{space 2}-.0733174{col 26}{space 2}  .056875{col 37}{space 1}   -1.29{col 46}{space 3}0.197{col 54}{space 4}-.1847911{col 67}{space 3} .0381563
+{txt}{space 5}cityDV3 {c |}{col 14}{res}{space 2}-.0622511{col 26}{space 2} .0607014{col 37}{space 1}   -1.03{col 46}{space 3}0.305{col 54}{space 4}-.1812245{col 67}{space 3} .0567224
+{txt}{space 5}cityDV4 {c |}{col 14}{res}{space 2} .4998472{col 26}{space 2} .0749443{col 37}{space 1}    6.67{col 46}{space 3}0.000{col 54}{space 4} .3529582{col 67}{space 3} .6467362
+{txt}{space 5}cityDV5 {c |}{col 14}{res}{space 2}-.0414954{col 26}{space 2} .0612363{col 37}{space 1}   -0.68{col 46}{space 3}0.498{col 54}{space 4}-.1615172{col 67}{space 3} .0785264
+{txt}{space 5}cityDV6 {c |}{col 14}{res}{space 2}-.3310676{col 26}{space 2} .0642855{col 37}{space 1}   -5.15{col 46}{space 3}0.000{col 54}{space 4}-.4570657{col 67}{space 3}-.2050696
+{txt}{space 5}cityDV7 {c |}{col 14}{res}{space 2} .0200954{col 26}{space 2} .0588527{col 37}{space 1}    0.34{col 46}{space 3}0.733{col 54}{space 4}-.0952545{col 67}{space 3} .1354453
+{txt}{space 5}cityDV8 {c |}{col 14}{res}{space 2}-.0823065{col 26}{space 2} .0506366{col 37}{space 1}   -1.63{col 46}{space 3}0.104{col 54}{space 4} -.181553{col 67}{space 3}   .01694
+{txt}{space 5}cityDV9 {c |}{col 14}{res}{space 2} .0783122{col 26}{space 2} .0861039{col 37}{space 1}    0.91{col 46}{space 3}0.363{col 54}{space 4}-.0904494{col 67}{space 3} .2470737
+{txt}{space 4}cityDV10 {c |}{col 14}{res}{space 2} .6395842{col 26}{space 2}  .069772{col 37}{space 1}    9.17{col 46}{space 3}0.000{col 54}{space 4} .5028327{col 67}{space 3} .7763357
+{txt}{space 4}cityDV11 {c |}{col 14}{res}{space 2}-.0681048{col 26}{space 2} .0600304{col 37}{space 1}   -1.13{col 46}{space 3}0.257{col 54}{space 4} -.185763{col 67}{space 3} .0495533
+{txt}{space 4}cityDV12 {c |}{col 14}{res}{space 2}-.0077624{col 26}{space 2}   .05143{col 37}{space 1}   -0.15{col 46}{space 3}0.880{col 54}{space 4} -.108564{col 67}{space 3} .0930391
+{txt}{space 4}cityDV13 {c |}{col 14}{res}{space 2} .2741391{col 26}{space 2} .0595464{col 37}{space 1}    4.60{col 46}{space 3}0.000{col 54}{space 4} .1574295{col 67}{space 3} .3908487
+{txt}{space 4}cityDV14 {c |}{col 14}{res}{space 2} .1843782{col 26}{space 2} .0629952{col 37}{space 1}    2.93{col 46}{space 3}0.003{col 54}{space 4} .0609091{col 67}{space 3} .3078472
+{txt}{space 4}cityDV15 {c |}{col 14}{res}{space 2}-.2274655{col 26}{space 2}   .06244{col 37}{space 1}   -3.64{col 46}{space 3}0.000{col 54}{space 4}-.3498464{col 67}{space 3}-.1050847
+{txt}{space 4}cityDV16 {c |}{col 14}{res}{space 2} .4470113{col 26}{space 2} .0601027{col 37}{space 1}    7.44{col 46}{space 3}0.000{col 54}{space 4} .3292113{col 67}{space 3} .5648112
+{txt}{space 4}cityDV17 {c |}{col 14}{res}{space 2} .1438181{col 26}{space 2} .0567712{col 37}{space 1}    2.53{col 46}{space 3}0.011{col 54}{space 4} .0325479{col 67}{space 3} .2550883
+{txt}{space 4}cityDV18 {c |}{col 14}{res}{space 2}-.0353914{col 26}{space 2} .0545377{col 37}{space 1}   -0.65{col 46}{space 3}0.516{col 54}{space 4}-.1422839{col 67}{space 3} .0715012
+{txt}{space 4}cityDV19 {c |}{col 14}{res}{space 2} 1.104673{col 26}{space 2} .0575906{col 37}{space 1}   19.18{col 46}{space 3}0.000{col 54}{space 4} .9917965{col 67}{space 3} 1.217549
+{txt}{space 4}cityDV20 {c |}{col 14}{res}{space 2}-.1665206{col 26}{space 2} .0555276{col 37}{space 1}   -3.00{col 46}{space 3}0.003{col 54}{space 4}-.2753535{col 67}{space 3}-.0576878
+{txt}{space 4}cityDV21 {c |}{col 14}{res}{space 2} .3495695{col 26}{space 2} .0513873{col 37}{space 1}    6.80{col 46}{space 3}0.000{col 54}{space 4} .2488517{col 67}{space 3} .4502873
+{txt}{space 4}cityDV22 {c |}{col 14}{res}{space 2} .0945121{col 26}{space 2}  .065593{col 37}{space 1}    1.44{col 46}{space 3}0.150{col 54}{space 4}-.0340486{col 67}{space 3} .2230728
+{txt}{space 4}cityDV23 {c |}{col 14}{res}{space 2} 1.765518{col 26}{space 2}  .097773{col 37}{space 1}   18.06{col 46}{space 3}0.000{col 54}{space 4} 1.573885{col 67}{space 3} 1.957151
+{txt}{space 4}cityDV24 {c |}{col 14}{res}{space 2} .0379398{col 26}{space 2} .0779917{col 37}{space 1}    0.49{col 46}{space 3}0.627{col 54}{space 4}-.1149221{col 67}{space 3} .1908016
+{txt}{space 4}cityDV25 {c |}{col 14}{res}{space 2}-.3075035{col 26}{space 2} .0583446{col 37}{space 1}   -5.27{col 46}{space 3}0.000{col 54}{space 4}-.4218576{col 67}{space 3}-.1931494
+{txt}{space 4}cityDV26 {c |}{col 14}{res}{space 2} .1039997{col 26}{space 2} .0530972{col 37}{space 1}    1.96{col 46}{space 3}0.050{col 54}{space 4}-.0000697{col 67}{space 3}  .208069
+{txt}{space 4}cityDV27 {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 7}_cons {c |}{col 14}{res}{space 2} .0558966{col 26}{space 2} .0563555{col 37}{space 1}    0.99{col 46}{space 3}0.321{col 54}{space 4}-.0545589{col 67}{space 3} .1663521
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg filings_2020 After_Mor white_maj latinx_maj black_maj emp_combined_inclow emp_combined_incmiddle emp_combined_inchigh i.realDate cityDV1-cityDV26
+{p 0 6 2}{txt}note: cityDV1 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV2 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV3 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV4 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV5 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV7 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV9 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV10 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV11 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV13 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV14 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV15 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV16 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV17 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV18 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV19 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV20 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV21 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV22 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV23 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV24 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV25 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV26 omitted because of collinearity{p_end}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}    54,165
+{txt}{hline 13}{c +}{hline 34}   F(32, 54132)    = {res}    19.30
+{txt}       Model {c |} {res} 7095.43246        32  221.732265   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 621758.654    54,132  11.4859723   {txt}R-squared       ={res}    0.0113
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0107
+{txt}       Total {c |} {res} 628854.086    54,164  11.6101855   {txt}Root MSE        =   {res} 3.3891
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}          filings_2020{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}After_Mor {c |}{col 24}{res}{space 2} .1315041{col 36}{space 2} .1379706{col 47}{space 1}    0.95{col 56}{space 3}0.341{col 64}{space 4}-.1389193{col 77}{space 3} .4019276
+{txt}{space 13}white_maj {c |}{col 24}{res}{space 2}-.5027375{col 36}{space 2} .0382343{col 47}{space 1}  -13.15{col 56}{space 3}0.000{col 64}{space 4}-.5776771{col 77}{space 3} -.427798
+{txt}{space 12}latinx_maj {c |}{col 24}{res}{space 2}-.2680557{col 36}{space 2} .0415942{col 47}{space 1}   -6.44{col 56}{space 3}0.000{col 64}{space 4}-.3495807{col 77}{space 3}-.1865307
+{txt}{space 13}black_maj {c |}{col 24}{res}{space 2}-.0699192{col 36}{space 2}  .050641{col 47}{space 1}   -1.38{col 56}{space 3}0.167{col 64}{space 4}-.1691759{col 77}{space 3} .0293374
+{txt}{space 3}emp_combined_inclow {c |}{col 24}{res}{space 2} .6558679{col 36}{space 2} 1.621982{col 47}{space 1}    0.40{col 56}{space 3}0.686{col 64}{space 4} -2.52323{col 77}{space 3} 3.834966
+{txt}emp_combined_incmiddle {c |}{col 24}{res}{space 2}-4.427792{col 36}{space 2} 3.112965{col 47}{space 1}   -1.42{col 56}{space 3}0.155{col 64}{space 4}-10.52923{col 77}{space 3} 1.673643
+{txt}{space 2}emp_combined_inchigh {c |}{col 24}{res}{space 2} 11.20076{col 36}{space 2} 3.428376{col 47}{space 1}    3.27{col 56}{space 3}0.001{col 64}{space 4} 4.481117{col 77}{space 3}  17.9204
+{txt}{space 22} {c |}
+{space 14}realDate {c |}
+{space 18}405  {c |}{col 24}{res}{space 2} .1409115{col 36}{space 2} .1405288{col 47}{space 1}    1.00{col 56}{space 3}0.316{col 64}{space 4}-.1345262{col 77}{space 3} .4163491
+{txt}{space 18}412  {c |}{col 24}{res}{space 2} .2699114{col 36}{space 2} .1836866{col 47}{space 1}    1.47{col 56}{space 3}0.142{col 64}{space 4}-.0901158{col 77}{space 3} .6299387
+{txt}{space 18}419  {c |}{col 24}{res}{space 2} .1771902{col 36}{space 2} .1857425{col 47}{space 1}    0.95{col 56}{space 3}0.340{col 64}{space 4}-.1868666{col 77}{space 3} .5412469
+{txt}{space 18}426  {c |}{col 24}{res}{space 2} .0444292{col 36}{space 2} .1754021{col 47}{space 1}    0.25{col 56}{space 3}0.800{col 64}{space 4}-.2993603{col 77}{space 3} .3882187
+{txt}{space 18}503  {c |}{col 24}{res}{space 2}-.0433651{col 36}{space 2} .1611353{col 47}{space 1}   -0.27{col 56}{space 3}0.788{col 64}{space 4}-.3591915{col 77}{space 3} .2724613
+{txt}{space 18}510  {c |}{col 24}{res}{space 2}-.1147818{col 36}{space 2} .1503086{col 47}{space 1}   -0.76{col 56}{space 3}0.445{col 64}{space 4}-.4093877{col 77}{space 3} .1798242
+{txt}{space 18}517  {c |}{col 24}{res}{space 2}-.0078568{col 36}{space 2} .1461978{col 47}{space 1}   -0.05{col 56}{space 3}0.957{col 64}{space 4}-.2944056{col 77}{space 3} .2786919
+{txt}{space 18}524  {c |}{col 24}{res}{space 2}-.1629317{col 36}{space 2} .1840216{col 47}{space 1}   -0.89{col 56}{space 3}0.376{col 64}{space 4}-.5236154{col 77}{space 3}  .197752
+{txt}{space 18}531  {c |}{col 24}{res}{space 2}-.1630614{col 36}{space 2} .2121949{col 47}{space 1}   -0.77{col 56}{space 3}0.442{col 64}{space 4}-.5789651{col 77}{space 3} .2528423
+{txt}{space 18}607  {c |}{col 24}{res}{space 2} .1023289{col 36}{space 2} .2120367{col 47}{space 1}    0.48{col 56}{space 3}0.629{col 64}{space 4}-.3132646{col 77}{space 3} .5179224
+{txt}{space 18}614  {c |}{col 24}{res}{space 2} .4287812{col 36}{space 2} .2032137{col 47}{space 1}    2.11{col 56}{space 3}0.035{col 64}{space 4} .0304808{col 77}{space 3} .8270816
+{txt}{space 18}621  {c |}{col 24}{res}{space 2} .2365181{col 36}{space 2} .2030735{col 47}{space 1}    1.16{col 56}{space 3}0.244{col 64}{space 4}-.1615076{col 77}{space 3} .6345438
+{txt}{space 18}628  {c |}{col 24}{res}{space 2}  -.10123{col 36}{space 2} .2044349{col 47}{space 1}   -0.50{col 56}{space 3}0.620{col 64}{space 4} -.501924{col 77}{space 3}  .299464
+{txt}{space 18}705  {c |}{col 24}{res}{space 2}  .000739{col 36}{space 2} .2025677{col 47}{space 1}    0.00{col 56}{space 3}0.997{col 64}{space 4}-.3962953{col 77}{space 3} .3977734
+{txt}{space 18}712  {c |}{col 24}{res}{space 2} .1731863{col 36}{space 2} .2015618{col 47}{space 1}    0.86{col 56}{space 3}0.390{col 64}{space 4}-.2218764{col 77}{space 3}  .568249
+{txt}{space 18}719  {c |}{col 24}{res}{space 2} .1040476{col 36}{space 2} .1966707{col 47}{space 1}    0.53{col 56}{space 3}0.597{col 64}{space 4}-.2814285{col 77}{space 3} .4895237
+{txt}{space 18}726  {c |}{col 24}{res}{space 2} .1925364{col 36}{space 2} .1907353{col 47}{space 1}    1.01{col 56}{space 3}0.313{col 64}{space 4}-.1813063{col 77}{space 3}  .566379
+{txt}{space 18}802  {c |}{col 24}{res}{space 2}-.0338976{col 36}{space 2} .1922608{col 47}{space 1}   -0.18{col 56}{space 3}0.860{col 64}{space 4}-.4107304{col 77}{space 3} .3429351
+{txt}{space 18}809  {c |}{col 24}{res}{space 2} .2683494{col 36}{space 2} .1925654{col 47}{space 1}    1.39{col 56}{space 3}0.163{col 64}{space 4}-.1090803{col 77}{space 3} .6457791
+{txt}{space 18}816  {c |}{col 24}{res}{space 2} .2256026{col 36}{space 2}  .191547{col 47}{space 1}    1.18{col 56}{space 3}0.239{col 64}{space 4} -.149831{col 77}{space 3} .6010362
+{txt}{space 18}823  {c |}{col 24}{res}{space 2} .5126555{col 36}{space 2} .1948683{col 47}{space 1}    2.63{col 56}{space 3}0.009{col 64}{space 4} .1307121{col 77}{space 3} .8945989
+{txt}{space 18}830  {c |}{col 24}{res}{space 2} .4641115{col 36}{space 2} .2024739{col 47}{space 1}    2.29{col 56}{space 3}0.022{col 64}{space 4}  .067261{col 77}{space 3} .8609619
+{txt}{space 22} {c |}
+{space 15}cityDV1 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV2 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV3 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV4 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV5 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV6 {c |}{col 24}{res}{space 2}-.2327484{col 36}{space 2} .0993532{col 47}{space 1}   -2.34{col 56}{space 3}0.019{col 64}{space 4}-.4274814{col 77}{space 3}-.0380154
+{txt}{space 15}cityDV7 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV8 {c |}{col 24}{res}{space 2}-.0409865{col 36}{space 2} .1520736{col 47}{space 1}   -0.27{col 56}{space 3}0.788{col 64}{space 4}-.3390519{col 77}{space 3} .2570788
+{txt}{space 15}cityDV9 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV10 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV11 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV12 {c |}{col 24}{res}{space 2} .1771613{col 36}{space 2}  .114409{col 47}{space 1}    1.55{col 56}{space 3}0.122{col 64}{space 4}-.0470813{col 77}{space 3} .4014039
+{txt}{space 14}cityDV13 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV14 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV15 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV16 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV17 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV18 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV19 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV20 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV21 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV22 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV23 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV24 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV25 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV26 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 17}_cons {c |}{col 24}{res}{space 2} .6379765{col 36}{space 2} .1437453{col 47}{space 1}    4.44{col 56}{space 3}0.000{col 64}{space 4} .3562345{col 77}{space 3} .9197185
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}.  reg filings_2020 After_Mor white_maj latinx_maj black_maj emp_combined_inclow emp_combined_incmiddle emp_combined_inchigh i.realDate cityDV1-cityDV27
+{p 0 6 2}{txt}note: cityDV1 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV2 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV3 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV4 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV5 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV7 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV9 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV10 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV11 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV13 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV14 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV15 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV16 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV17 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV18 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV19 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV20 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV21 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV22 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV23 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV24 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV25 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV26 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV27 omitted because of collinearity{p_end}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}    54,165
+{txt}{hline 13}{c +}{hline 34}   F(32, 54132)    = {res}    19.30
+{txt}       Model {c |} {res} 7095.43246        32  221.732265   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 621758.654    54,132  11.4859723   {txt}R-squared       ={res}    0.0113
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0107
+{txt}       Total {c |} {res} 628854.086    54,164  11.6101855   {txt}Root MSE        =   {res} 3.3891
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}          filings_2020{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}After_Mor {c |}{col 24}{res}{space 2} .1315041{col 36}{space 2} .1379706{col 47}{space 1}    0.95{col 56}{space 3}0.341{col 64}{space 4}-.1389193{col 77}{space 3} .4019276
+{txt}{space 13}white_maj {c |}{col 24}{res}{space 2}-.5027375{col 36}{space 2} .0382343{col 47}{space 1}  -13.15{col 56}{space 3}0.000{col 64}{space 4}-.5776771{col 77}{space 3} -.427798
+{txt}{space 12}latinx_maj {c |}{col 24}{res}{space 2}-.2680557{col 36}{space 2} .0415942{col 47}{space 1}   -6.44{col 56}{space 3}0.000{col 64}{space 4}-.3495807{col 77}{space 3}-.1865307
+{txt}{space 13}black_maj {c |}{col 24}{res}{space 2}-.0699192{col 36}{space 2}  .050641{col 47}{space 1}   -1.38{col 56}{space 3}0.167{col 64}{space 4}-.1691759{col 77}{space 3} .0293374
+{txt}{space 3}emp_combined_inclow {c |}{col 24}{res}{space 2} .6558679{col 36}{space 2} 1.621982{col 47}{space 1}    0.40{col 56}{space 3}0.686{col 64}{space 4} -2.52323{col 77}{space 3} 3.834966
+{txt}emp_combined_incmiddle {c |}{col 24}{res}{space 2}-4.427792{col 36}{space 2} 3.112965{col 47}{space 1}   -1.42{col 56}{space 3}0.155{col 64}{space 4}-10.52923{col 77}{space 3} 1.673643
+{txt}{space 2}emp_combined_inchigh {c |}{col 24}{res}{space 2} 11.20076{col 36}{space 2} 3.428376{col 47}{space 1}    3.27{col 56}{space 3}0.001{col 64}{space 4} 4.481117{col 77}{space 3}  17.9204
+{txt}{space 22} {c |}
+{space 14}realDate {c |}
+{space 18}405  {c |}{col 24}{res}{space 2} .1409115{col 36}{space 2} .1405288{col 47}{space 1}    1.00{col 56}{space 3}0.316{col 64}{space 4}-.1345262{col 77}{space 3} .4163491
+{txt}{space 18}412  {c |}{col 24}{res}{space 2} .2699114{col 36}{space 2} .1836866{col 47}{space 1}    1.47{col 56}{space 3}0.142{col 64}{space 4}-.0901158{col 77}{space 3} .6299387
+{txt}{space 18}419  {c |}{col 24}{res}{space 2} .1771902{col 36}{space 2} .1857425{col 47}{space 1}    0.95{col 56}{space 3}0.340{col 64}{space 4}-.1868666{col 77}{space 3} .5412469
+{txt}{space 18}426  {c |}{col 24}{res}{space 2} .0444292{col 36}{space 2} .1754021{col 47}{space 1}    0.25{col 56}{space 3}0.800{col 64}{space 4}-.2993603{col 77}{space 3} .3882187
+{txt}{space 18}503  {c |}{col 24}{res}{space 2}-.0433651{col 36}{space 2} .1611353{col 47}{space 1}   -0.27{col 56}{space 3}0.788{col 64}{space 4}-.3591915{col 77}{space 3} .2724613
+{txt}{space 18}510  {c |}{col 24}{res}{space 2}-.1147818{col 36}{space 2} .1503086{col 47}{space 1}   -0.76{col 56}{space 3}0.445{col 64}{space 4}-.4093877{col 77}{space 3} .1798242
+{txt}{space 18}517  {c |}{col 24}{res}{space 2}-.0078568{col 36}{space 2} .1461978{col 47}{space 1}   -0.05{col 56}{space 3}0.957{col 64}{space 4}-.2944056{col 77}{space 3} .2786919
+{txt}{space 18}524  {c |}{col 24}{res}{space 2}-.1629317{col 36}{space 2} .1840216{col 47}{space 1}   -0.89{col 56}{space 3}0.376{col 64}{space 4}-.5236154{col 77}{space 3}  .197752
+{txt}{space 18}531  {c |}{col 24}{res}{space 2}-.1630614{col 36}{space 2} .2121949{col 47}{space 1}   -0.77{col 56}{space 3}0.442{col 64}{space 4}-.5789651{col 77}{space 3} .2528423
+{txt}{space 18}607  {c |}{col 24}{res}{space 2} .1023289{col 36}{space 2} .2120367{col 47}{space 1}    0.48{col 56}{space 3}0.629{col 64}{space 4}-.3132646{col 77}{space 3} .5179224
+{txt}{space 18}614  {c |}{col 24}{res}{space 2} .4287812{col 36}{space 2} .2032137{col 47}{space 1}    2.11{col 56}{space 3}0.035{col 64}{space 4} .0304808{col 77}{space 3} .8270816
+{txt}{space 18}621  {c |}{col 24}{res}{space 2} .2365181{col 36}{space 2} .2030735{col 47}{space 1}    1.16{col 56}{space 3}0.244{col 64}{space 4}-.1615076{col 77}{space 3} .6345438
+{txt}{space 18}628  {c |}{col 24}{res}{space 2}  -.10123{col 36}{space 2} .2044349{col 47}{space 1}   -0.50{col 56}{space 3}0.620{col 64}{space 4} -.501924{col 77}{space 3}  .299464
+{txt}{space 18}705  {c |}{col 24}{res}{space 2}  .000739{col 36}{space 2} .2025677{col 47}{space 1}    0.00{col 56}{space 3}0.997{col 64}{space 4}-.3962953{col 77}{space 3} .3977734
+{txt}{space 18}712  {c |}{col 24}{res}{space 2} .1731863{col 36}{space 2} .2015618{col 47}{space 1}    0.86{col 56}{space 3}0.390{col 64}{space 4}-.2218764{col 77}{space 3}  .568249
+{txt}{space 18}719  {c |}{col 24}{res}{space 2} .1040476{col 36}{space 2} .1966707{col 47}{space 1}    0.53{col 56}{space 3}0.597{col 64}{space 4}-.2814285{col 77}{space 3} .4895237
+{txt}{space 18}726  {c |}{col 24}{res}{space 2} .1925364{col 36}{space 2} .1907353{col 47}{space 1}    1.01{col 56}{space 3}0.313{col 64}{space 4}-.1813063{col 77}{space 3}  .566379
+{txt}{space 18}802  {c |}{col 24}{res}{space 2}-.0338976{col 36}{space 2} .1922608{col 47}{space 1}   -0.18{col 56}{space 3}0.860{col 64}{space 4}-.4107304{col 77}{space 3} .3429351
+{txt}{space 18}809  {c |}{col 24}{res}{space 2} .2683494{col 36}{space 2} .1925654{col 47}{space 1}    1.39{col 56}{space 3}0.163{col 64}{space 4}-.1090803{col 77}{space 3} .6457791
+{txt}{space 18}816  {c |}{col 24}{res}{space 2} .2256026{col 36}{space 2}  .191547{col 47}{space 1}    1.18{col 56}{space 3}0.239{col 64}{space 4} -.149831{col 77}{space 3} .6010362
+{txt}{space 18}823  {c |}{col 24}{res}{space 2} .5126555{col 36}{space 2} .1948683{col 47}{space 1}    2.63{col 56}{space 3}0.009{col 64}{space 4} .1307121{col 77}{space 3} .8945989
+{txt}{space 18}830  {c |}{col 24}{res}{space 2} .4641115{col 36}{space 2} .2024739{col 47}{space 1}    2.29{col 56}{space 3}0.022{col 64}{space 4}  .067261{col 77}{space 3} .8609619
+{txt}{space 22} {c |}
+{space 15}cityDV1 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV2 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV3 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV4 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV5 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV6 {c |}{col 24}{res}{space 2}-.2327484{col 36}{space 2} .0993532{col 47}{space 1}   -2.34{col 56}{space 3}0.019{col 64}{space 4}-.4274814{col 77}{space 3}-.0380154
+{txt}{space 15}cityDV7 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV8 {c |}{col 24}{res}{space 2}-.0409865{col 36}{space 2} .1520736{col 47}{space 1}   -0.27{col 56}{space 3}0.788{col 64}{space 4}-.3390519{col 77}{space 3} .2570788
+{txt}{space 15}cityDV9 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV10 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV11 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV12 {c |}{col 24}{res}{space 2} .1771613{col 36}{space 2}  .114409{col 47}{space 1}    1.55{col 56}{space 3}0.122{col 64}{space 4}-.0470813{col 77}{space 3} .4014039
+{txt}{space 14}cityDV13 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV14 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV15 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV16 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV17 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV18 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV19 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV20 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV21 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV22 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV23 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV24 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV25 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV26 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV27 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 17}_cons {c |}{col 24}{res}{space 2} .6379765{col 36}{space 2} .1437453{col 47}{space 1}    4.44{col 56}{space 3}0.000{col 64}{space 4} .3562345{col 77}{space 3} .9197185
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+.  reg filings_2020 After_Mor white_maj latinx_maj black_maj emp_combined_inclow emp_combined_incmiddle i.realDate cityDV1-cityDV27
+{p 0 6 2}{txt}note: cityDV1 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV2 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV3 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV4 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV5 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV7 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV9 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV10 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV11 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV13 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV15 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV16 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV18 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV19 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV20 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV21 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV22 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV23 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV24 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV25 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV26 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV27 omitted because of collinearity{p_end}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}    71,254
+{txt}{hline 13}{c +}{hline 34}   F(33, 71220)    = {res}    26.28
+{txt}       Model {c |} {res} 7723.38717        33  234.042035   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 634201.583    71,220  8.90482425   {txt}R-squared       ={res}    0.0120
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0116
+{txt}       Total {c |} {res}  641924.97    71,253  9.00909394   {txt}Root MSE        =   {res} 2.9841
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}          filings_2020{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}After_Mor {c |}{col 24}{res}{space 2} .2913912{col 36}{space 2} .0639821{col 47}{space 1}    4.55{col 56}{space 3}0.000{col 64}{space 4} .1659864{col 77}{space 3}  .416796
+{txt}{space 13}white_maj {c |}{col 24}{res}{space 2}-.4193601{col 36}{space 2} .0291796{col 47}{space 1}  -14.37{col 56}{space 3}0.000{col 64}{space 4} -.476552{col 77}{space 3}-.3621682
+{txt}{space 12}latinx_maj {c |}{col 24}{res}{space 2} -.214308{col 36}{space 2} .0345423{col 47}{space 1}   -6.20{col 56}{space 3}0.000{col 64}{space 4}-.2820108{col 77}{space 3}-.1466052
+{txt}{space 13}black_maj {c |}{col 24}{res}{space 2}-.0261316{col 36}{space 2} .0400998{col 47}{space 1}   -0.65{col 56}{space 3}0.515{col 64}{space 4}-.1047271{col 77}{space 3} .0524638
+{txt}{space 3}emp_combined_inclow {c |}{col 24}{res}{space 2} 2.826399{col 36}{space 2} .9679999{col 47}{space 1}    2.92{col 56}{space 3}0.004{col 64}{space 4} .9291221{col 77}{space 3} 4.723676
+{txt}emp_combined_incmiddle {c |}{col 24}{res}{space 2}-3.356243{col 36}{space 2} 1.461196{col 47}{space 1}   -2.30{col 56}{space 3}0.022{col 64}{space 4}-6.220184{col 77}{space 3}-.4923026
+{txt}{space 22} {c |}
+{space 14}realDate {c |}
+{space 18}405  {c |}{col 24}{res}{space 2} .0202113{col 36}{space 2} .0959894{col 47}{space 1}    0.21{col 56}{space 3}0.833{col 64}{space 4}-.1679277{col 77}{space 3} .2083503
+{txt}{space 18}412  {c |}{col 24}{res}{space 2} .1438853{col 36}{space 2} .1229748{col 47}{space 1}    1.17{col 56}{space 3}0.242{col 64}{space 4} -.097145{col 77}{space 3} .3849157
+{txt}{space 18}419  {c |}{col 24}{res}{space 2} .1821309{col 36}{space 2} .1334849{col 47}{space 1}    1.36{col 56}{space 3}0.172{col 64}{space 4}-.0794992{col 77}{space 3}  .443761
+{txt}{space 18}426  {c |}{col 24}{res}{space 2} .1912739{col 36}{space 2} .1326426{col 47}{space 1}    1.44{col 56}{space 3}0.149{col 64}{space 4}-.0687053{col 77}{space 3} .4512531
+{txt}{space 18}503  {c |}{col 24}{res}{space 2} .1886683{col 36}{space 2} .1230431{col 47}{space 1}    1.53{col 56}{space 3}0.125{col 64}{space 4}-.0524958{col 77}{space 3} .4298324
+{txt}{space 18}510  {c |}{col 24}{res}{space 2} .2057706{col 36}{space 2} .1114298{col 47}{space 1}    1.85{col 56}{space 3}0.065{col 64}{space 4}-.0126316{col 77}{space 3} .4241727
+{txt}{space 18}517  {c |}{col 24}{res}{space 2} .3172474{col 36}{space 2} .1015892{col 47}{space 1}    3.12{col 56}{space 3}0.002{col 64}{space 4} .1181329{col 77}{space 3}  .516362
+{txt}{space 18}524  {c |}{col 24}{res}{space 2} .1202886{col 36}{space 2} .0952288{col 47}{space 1}    1.26{col 56}{space 3}0.207{col 64}{space 4}-.0663596{col 77}{space 3} .3069368
+{txt}{space 18}531  {c |}{col 24}{res}{space 2} .1300102{col 36}{space 2} .0942136{col 47}{space 1}    1.38{col 56}{space 3}0.168{col 64}{space 4}-.0546481{col 77}{space 3} .3146686
+{txt}{space 18}607  {c |}{col 24}{res}{space 2} .2991084{col 36}{space 2} .0925713{col 47}{space 1}    3.23{col 56}{space 3}0.001{col 64}{space 4} .1176689{col 77}{space 3} .4805479
+{txt}{space 18}614  {c |}{col 24}{res}{space 2} .5230467{col 36}{space 2} .0948781{col 47}{space 1}    5.51{col 56}{space 3}0.000{col 64}{space 4} .3370858{col 77}{space 3} .7090076
+{txt}{space 18}621  {c |}{col 24}{res}{space 2} .3633755{col 36}{space 2} .0958504{col 47}{space 1}    3.79{col 56}{space 3}0.000{col 64}{space 4}  .175509{col 77}{space 3}  .551242
+{txt}{space 18}628  {c |}{col 24}{res}{space 2} .0832525{col 36}{space 2} .0946707{col 47}{space 1}    0.88{col 56}{space 3}0.379{col 64}{space 4}-.1023018{col 77}{space 3} .2688068
+{txt}{space 18}705  {c |}{col 24}{res}{space 2} .1511845{col 36}{space 2} .0921444{col 47}{space 1}    1.64{col 56}{space 3}0.101{col 64}{space 4}-.0294184{col 77}{space 3} .3317873
+{txt}{space 18}712  {c |}{col 24}{res}{space 2} .2814963{col 36}{space 2} .0901399{col 47}{space 1}    3.12{col 56}{space 3}0.002{col 64}{space 4} .1048224{col 77}{space 3} .4581701
+{txt}{space 18}719  {c |}{col 24}{res}{space 2} .2088247{col 36}{space 2} .0902089{col 47}{space 1}    2.31{col 56}{space 3}0.021{col 64}{space 4} .0320154{col 77}{space 3} .3856339
+{txt}{space 18}726  {c |}{col 24}{res}{space 2} .2790931{col 36}{space 2} .0924547{col 47}{space 1}    3.02{col 56}{space 3}0.003{col 64}{space 4} .0978821{col 77}{space 3} .4603041
+{txt}{space 18}802  {c |}{col 24}{res}{space 2} .2263435{col 36}{space 2} .0949398{col 47}{space 1}    2.38{col 56}{space 3}0.017{col 64}{space 4} .0402618{col 77}{space 3} .4124252
+{txt}{space 18}809  {c |}{col 24}{res}{space 2} .4750757{col 36}{space 2} .0988168{col 47}{space 1}    4.81{col 56}{space 3}0.000{col 64}{space 4}  .281395{col 77}{space 3} .6687564
+{txt}{space 18}816  {c |}{col 24}{res}{space 2} .4497536{col 36}{space 2} .1024233{col 47}{space 1}    4.39{col 56}{space 3}0.000{col 64}{space 4} .2490043{col 77}{space 3}  .650503
+{txt}{space 18}823  {c |}{col 24}{res}{space 2} .6538772{col 36}{space 2} .1075374{col 47}{space 1}    6.08{col 56}{space 3}0.000{col 64}{space 4} .4431042{col 77}{space 3} .8646502
+{txt}{space 18}830  {c |}{col 24}{res}{space 2}  .665654{col 36}{space 2} .1111768{col 47}{space 1}    5.99{col 56}{space 3}0.000{col 64}{space 4} .4477478{col 77}{space 3} .8835602
+{txt}{space 22} {c |}
+{space 15}cityDV1 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV2 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV3 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV4 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV5 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV6 {c |}{col 24}{res}{space 2}-.3884752{col 36}{space 2} .0808656{col 47}{space 1}   -4.80{col 56}{space 3}0.000{col 64}{space 4}-.5469714{col 77}{space 3}-.2299789
+{txt}{space 15}cityDV7 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV8 {c |}{col 24}{res}{space 2}-.0811106{col 36}{space 2}  .050819{col 47}{space 1}   -1.60{col 56}{space 3}0.110{col 64}{space 4}-.1807156{col 77}{space 3} .0184945
+{txt}{space 15}cityDV9 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV10 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV11 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV12 {c |}{col 24}{res}{space 2}-.1467032{col 36}{space 2} .0702875{col 47}{space 1}   -2.09{col 56}{space 3}0.037{col 64}{space 4}-.2844664{col 77}{space 3}-.0089399
+{txt}{space 14}cityDV13 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV14 {c |}{col 24}{res}{space 2} .2127931{col 36}{space 2} .0764276{col 47}{space 1}    2.78{col 56}{space 3}0.005{col 64}{space 4} .0629952{col 77}{space 3} .3625909
+{txt}{space 14}cityDV15 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV16 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV17 {c |}{col 24}{res}{space 2}-.0252155{col 36}{space 2} .0811262{col 47}{space 1}   -0.31{col 56}{space 3}0.756{col 64}{space 4}-.1842226{col 77}{space 3} .1337917
+{txt}{space 14}cityDV18 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV19 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV20 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV21 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV22 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV23 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV24 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV25 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV26 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV27 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 17}_cons {c |}{col 24}{res}{space 2} .5446621{col 36}{space 2} .1186712{col 47}{space 1}    4.59{col 56}{space 3}0.000{col 64}{space 4} .3120668{col 77}{space 3} .7772574
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. reg filings_2020 After_Mor white_maj latinx_maj black_maj emp_combined_inclow emp_combined_incmiddle spend_all i.realDate cityDV1-cityDV27
+{p 0 6 2}{txt}note: cityDV1 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV2 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV3 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV4 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV5 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV7 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV9 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV10 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV11 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV13 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV15 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV16 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV18 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV19 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV20 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV21 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV22 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV23 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV24 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV25 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV26 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV27 omitted because of collinearity{p_end}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}    71,254
+{txt}{hline 13}{c +}{hline 34}   F(34, 71219)    = {res}    25.85
+{txt}       Model {c |} {res} 7825.01378        34  230.147464   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 634099.957    71,219  8.90352233   {txt}R-squared       ={res}    0.0122
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0117
+{txt}       Total {c |} {res}  641924.97    71,253  9.00909394   {txt}Root MSE        =   {res} 2.9839
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}          filings_2020{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}After_Mor {c |}{col 24}{res}{space 2} .3175318{col 36}{space 2} .0644436{col 47}{space 1}    4.93{col 56}{space 3}0.000{col 64}{space 4} .1912225{col 77}{space 3} .4438412
+{txt}{space 13}white_maj {c |}{col 24}{res}{space 2}-.4193601{col 36}{space 2} .0291774{col 47}{space 1}  -14.37{col 56}{space 3}0.000{col 64}{space 4}-.4765478{col 77}{space 3}-.3621724
+{txt}{space 12}latinx_maj {c |}{col 24}{res}{space 2} -.214308{col 36}{space 2} .0345398{col 47}{space 1}   -6.20{col 56}{space 3}0.000{col 64}{space 4}-.2820059{col 77}{space 3}-.1466101
+{txt}{space 13}black_maj {c |}{col 24}{res}{space 2}-.0261316{col 36}{space 2} .0400968{col 47}{space 1}   -0.65{col 56}{space 3}0.515{col 64}{space 4}-.1047213{col 77}{space 3} .0524581
+{txt}{space 3}emp_combined_inclow {c |}{col 24}{res}{space 2} 2.563549{col 36}{space 2} .9710509{col 47}{space 1}    2.64{col 56}{space 3}0.008{col 64}{space 4} .6602916{col 77}{space 3} 4.466806
+{txt}emp_combined_incmiddle {c |}{col 24}{res}{space 2}-3.160257{col 36}{space 2} 1.462241{col 47}{space 1}   -2.16{col 56}{space 3}0.031{col 64}{space 4}-6.026245{col 77}{space 3}  -.29427
+{txt}{space 13}spend_all {c |}{col 24}{res}{space 2}-1.588019{col 36}{space 2} .4700379{col 47}{space 1}   -3.38{col 56}{space 3}0.001{col 64}{space 4}-2.509292{col 77}{space 3} -.666746
+{txt}{space 22} {c |}
+{space 14}realDate {c |}
+{space 18}405  {c |}{col 24}{res}{space 2} .0514277{col 36}{space 2} .0964261{col 47}{space 1}    0.53{col 56}{space 3}0.594{col 64}{space 4}-.1375673{col 77}{space 3} .2404226
+{txt}{space 18}412  {c |}{col 24}{res}{space 2}  .100934{col 36}{space 2} .1236213{col 47}{space 1}    0.82{col 56}{space 3}0.414{col 64}{space 4}-.1413635{col 77}{space 3} .3432314
+{txt}{space 18}419  {c |}{col 24}{res}{space 2} .2521979{col 36}{space 2} .1350768{col 47}{space 1}    1.87{col 56}{space 3}0.062{col 64}{space 4}-.0125522{col 77}{space 3}  .516948
+{txt}{space 18}426  {c |}{col 24}{res}{space 2} .2771186{col 36}{space 2} .1350449{col 47}{space 1}    2.05{col 56}{space 3}0.040{col 64}{space 4}  .012431{col 77}{space 3} .5418063
+{txt}{space 18}503  {c |}{col 24}{res}{space 2} .3343101{col 36}{space 2} .1303677{col 47}{space 1}    2.56{col 56}{space 3}0.010{col 64}{space 4} .0787897{col 77}{space 3} .5898304
+{txt}{space 18}510  {c |}{col 24}{res}{space 2} .4564573{col 36}{space 2} .1338677{col 47}{space 1}    3.41{col 56}{space 3}0.001{col 64}{space 4} .1940771{col 77}{space 3} .7188375
+{txt}{space 18}517  {c |}{col 24}{res}{space 2} .5428724{col 36}{space 2}  .121568{col 47}{space 1}    4.47{col 56}{space 3}0.000{col 64}{space 4} .3045994{col 77}{space 3} .7811455
+{txt}{space 18}524  {c |}{col 24}{res}{space 2} .3766771{col 36}{space 2} .1217631{col 47}{space 1}    3.09{col 56}{space 3}0.002{col 64}{space 4} .1380217{col 77}{space 3} .6153325
+{txt}{space 18}531  {c |}{col 24}{res}{space 2} .3663358{col 36}{space 2} .1173367{col 47}{space 1}    3.12{col 56}{space 3}0.002{col 64}{space 4} .1363561{col 77}{space 3} .5963154
+{txt}{space 18}607  {c |}{col 24}{res}{space 2} .6366135{col 36}{space 2} .1361905{col 47}{space 1}    4.67{col 56}{space 3}0.000{col 64}{space 4} .3696806{col 77}{space 3} .9035465
+{txt}{space 18}614  {c |}{col 24}{res}{space 2}  .854104{col 36}{space 2} .1363911{col 47}{space 1}    6.26{col 56}{space 3}0.000{col 64}{space 4} .5867779{col 77}{space 3}  1.12143
+{txt}{space 18}621  {c |}{col 24}{res}{space 2} .7704641{col 36}{space 2} .1539636{col 47}{space 1}    5.00{col 56}{space 3}0.000{col 64}{space 4} .4686958{col 77}{space 3} 1.072232
+{txt}{space 18}628  {c |}{col 24}{res}{space 2} .3710574{col 36}{space 2} .1273504{col 47}{space 1}    2.91{col 56}{space 3}0.004{col 64}{space 4}  .121451{col 77}{space 3} .6206638
+{txt}{space 18}705  {c |}{col 24}{res}{space 2} .5317642{col 36}{space 2} .1455297{col 47}{space 1}    3.65{col 56}{space 3}0.000{col 64}{space 4} .2465264{col 77}{space 3}  .817002
+{txt}{space 18}712  {c |}{col 24}{res}{space 2}  .635996{col 36}{space 2} .1383256{col 47}{space 1}    4.60{col 56}{space 3}0.000{col 64}{space 4} .3648782{col 77}{space 3} .9071139
+{txt}{space 18}719  {c |}{col 24}{res}{space 2} .6033633{col 36}{space 2} .1475599{col 47}{space 1}    4.09{col 56}{space 3}0.000{col 64}{space 4} .3141463{col 77}{space 3} .8925803
+{txt}{space 18}726  {c |}{col 24}{res}{space 2} .6717384{col 36}{space 2} .1485042{col 47}{space 1}    4.52{col 56}{space 3}0.000{col 64}{space 4} .3806705{col 77}{space 3} .9628063
+{txt}{space 18}802  {c |}{col 24}{res}{space 2} .5967652{col 36}{space 2}  .145029{col 47}{space 1}    4.11{col 56}{space 3}0.000{col 64}{space 4} .3125086{col 77}{space 3} .8810217
+{txt}{space 18}809  {c |}{col 24}{res}{space 2} .9396739{col 36}{space 2} .1693343{col 47}{space 1}    5.55{col 56}{space 3}0.000{col 64}{space 4} .6077791{col 77}{space 3} 1.271569
+{txt}{space 18}816  {c |}{col 24}{res}{space 2} .9106822{col 36}{space 2} .1705937{col 47}{space 1}    5.34{col 56}{space 3}0.000{col 64}{space 4}  .576319{col 77}{space 3} 1.245046
+{txt}{space 18}823  {c |}{col 24}{res}{space 2} 1.194143{col 36}{space 2} .1927041{col 47}{space 1}    6.20{col 56}{space 3}0.000{col 64}{space 4} .8164435{col 77}{space 3} 1.571843
+{txt}{space 18}830  {c |}{col 24}{res}{space 2} 1.137652{col 36}{space 2} .1785398{col 47}{space 1}    6.37{col 56}{space 3}0.000{col 64}{space 4} .7877146{col 77}{space 3} 1.487589
+{txt}{space 22} {c |}
+{space 15}cityDV1 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV2 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV3 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV4 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV5 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV6 {c |}{col 24}{res}{space 2}-.4189571{col 36}{space 2} .0813615{col 47}{space 1}   -5.15{col 56}{space 3}0.000{col 64}{space 4}-.5784253{col 77}{space 3}-.2594889
+{txt}{space 15}cityDV7 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV8 {c |}{col 24}{res}{space 2}-.0519603{col 36}{space 2} .0515426{col 47}{space 1}   -1.01{col 56}{space 3}0.313{col 64}{space 4}-.1529836{col 77}{space 3}  .049063
+{txt}{space 15}cityDV9 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV10 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV11 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV12 {c |}{col 24}{res}{space 2}-.1433061{col 36}{space 2} .0702895{col 47}{space 1}   -2.04{col 56}{space 3}0.041{col 64}{space 4}-.2810734{col 77}{space 3}-.0055389
+{txt}{space 14}cityDV13 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV14 {c |}{col 24}{res}{space 2} .4310093{col 36}{space 2} .1000608{col 47}{space 1}    4.31{col 56}{space 3}0.000{col 64}{space 4} .2348903{col 77}{space 3} .6271283
+{txt}{space 14}cityDV15 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV16 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV17 {c |}{col 24}{res}{space 2}-.0230449{col 36}{space 2} .0811228{col 47}{space 1}   -0.28{col 56}{space 3}0.776{col 64}{space 4}-.1820454{col 77}{space 3} .1359557
+{txt}{space 14}cityDV18 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV19 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV20 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV21 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV22 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV23 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV24 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV25 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV26 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV27 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 17}_cons {c |}{col 24}{res}{space 2}-.0320537{col 36}{space 2} .2078943{col 47}{space 1}   -0.15{col 56}{space 3}0.877{col 64}{space 4}-.4395259{col 77}{space 3} .3754186
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. reg filings_2020 After_Mor white_maj latinx_maj black_maj wht_after latinx_after black_after emp_combined_inclow emp_combined_incmiddle spend_all i.realDate cityDV1-cityDV27
+{p 0 6 2}{txt}note: cityDV1 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV2 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV3 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV4 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV5 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV7 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV9 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV10 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV11 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV13 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV15 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV16 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV18 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV19 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV20 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV21 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV22 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV23 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV24 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV25 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV26 omitted because of collinearity{p_end}
+{p 0 6 2}note: cityDV27 omitted because of collinearity{p_end}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}    71,254
+{txt}{hline 13}{c +}{hline 34}   F(37, 71216)    = {res}    26.43
+{txt}       Model {c |} {res} 8696.41992        37  235.038376   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 633228.551    71,216  8.89166129   {txt}R-squared       ={res}    0.0135
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0130
+{txt}       Total {c |} {res}  641924.97    71,253  9.00909394   {txt}Root MSE        =   {res} 2.9819
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}          filings_2020{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}After_Mor {c |}{col 24}{res}{space 2} .6248652{col 36}{space 2} .0761914{col 47}{space 1}    8.20{col 56}{space 3}0.000{col 64}{space 4} .4755303{col 77}{space 3} .7742001
+{txt}{space 13}white_maj {c |}{col 24}{res}{space 2}-.1571574{col 36}{space 2} .0412274{col 47}{space 1}   -3.81{col 56}{space 3}0.000{col 64}{space 4}-.2379629{col 77}{space 3}-.0763519
+{txt}{space 12}latinx_maj {c |}{col 24}{res}{space 2} .0000764{col 36}{space 2} .0538668{col 47}{space 1}    0.00{col 56}{space 3}0.999{col 64}{space 4}-.1055024{col 77}{space 3} .1056551
+{txt}{space 13}black_maj {c |}{col 24}{res}{space 2} .0116582{col 36}{space 2} .0602465{col 47}{space 1}    0.19{col 56}{space 3}0.847{col 64}{space 4}-.1064248{col 77}{space 3} .1297413
+{txt}{space 13}wht_after {c |}{col 24}{res}{space 2}-.5263721{col 36}{space 2}  .057785{col 47}{space 1}   -9.11{col 56}{space 3}0.000{col 64}{space 4}-.6396306{col 77}{space 3}-.4131136
+{txt}{space 10}latinx_after {c |}{col 24}{res}{space 2}-.3933249{col 36}{space 2} .0701157{col 47}{space 1}   -5.61{col 56}{space 3}0.000{col 64}{space 4}-.5307515{col 77}{space 3}-.2558983
+{txt}{space 11}black_after {c |}{col 24}{res}{space 2}-.0843683{col 36}{space 2} .0791035{col 47}{space 1}   -1.07{col 56}{space 3}0.286{col 64}{space 4}-.2394109{col 77}{space 3} .0706742
+{txt}{space 3}emp_combined_inclow {c |}{col 24}{res}{space 2} 2.532328{col 36}{space 2} .9709853{col 47}{space 1}    2.61{col 56}{space 3}0.009{col 64}{space 4} .6291999{col 77}{space 3} 4.435457
+{txt}emp_combined_incmiddle {c |}{col 24}{res}{space 2}-3.044548{col 36}{space 2} 1.462922{col 47}{space 1}   -2.08{col 56}{space 3}0.037{col 64}{space 4}-5.911872{col 77}{space 3}-.1772248
+{txt}{space 13}spend_all {c |}{col 24}{res}{space 2}-1.575942{col 36}{space 2} .4698087{col 47}{space 1}   -3.35{col 56}{space 3}0.001{col 64}{space 4}-2.496766{col 77}{space 3}-.6551181
+{txt}{space 22} {c |}
+{space 14}realDate {c |}
+{space 18}405  {c |}{col 24}{res}{space 2} .0540434{col 36}{space 2} .0963929{col 47}{space 1}    0.56{col 56}{space 3}0.575{col 64}{space 4}-.1348864{col 77}{space 3} .2429731
+{txt}{space 18}412  {c |}{col 24}{res}{space 2} .1057505{col 36}{space 2} .1236201{col 47}{space 1}    0.86{col 56}{space 3}0.392{col 64}{space 4}-.1365445{col 77}{space 3} .3480454
+{txt}{space 18}419  {c |}{col 24}{res}{space 2} .2562021{col 36}{space 2} .1350554{col 47}{space 1}    1.90{col 56}{space 3}0.058{col 64}{space 4}-.0085061{col 77}{space 3} .5209102
+{txt}{space 18}426  {c |}{col 24}{res}{space 2} .2803685{col 36}{space 2} .1350154{col 47}{space 1}    2.08{col 56}{space 3}0.038{col 64}{space 4} .0157386{col 77}{space 3} .5449984
+{txt}{space 18}503  {c |}{col 24}{res}{space 2} .3362489{col 36}{space 2} .1303195{col 47}{space 1}    2.58{col 56}{space 3}0.010{col 64}{space 4} .0808229{col 77}{space 3} .5916748
+{txt}{space 18}510  {c |}{col 24}{res}{space 2} .4563416{col 36}{space 2} .1337949{col 47}{space 1}    3.41{col 56}{space 3}0.001{col 64}{space 4} .1941039{col 77}{space 3} .7185792
+{txt}{space 18}517  {c |}{col 24}{res}{space 2} .5416195{col 36}{space 2} .1215004{col 47}{space 1}    4.46{col 56}{space 3}0.000{col 64}{space 4}  .303479{col 77}{space 3} .7797599
+{txt}{space 18}524  {c |}{col 24}{res}{space 2} .3686374{col 36}{space 2} .1217778{col 47}{space 1}    3.03{col 56}{space 3}0.002{col 64}{space 4} .1299532{col 77}{space 3} .6073215
+{txt}{space 18}531  {c |}{col 24}{res}{space 2} .3604363{col 36}{space 2} .1173125{col 47}{space 1}    3.07{col 56}{space 3}0.002{col 64}{space 4} .1305042{col 77}{space 3} .5903684
+{txt}{space 18}607  {c |}{col 24}{res}{space 2} .6299795{col 36}{space 2} .1361619{col 47}{space 1}    4.63{col 56}{space 3}0.000{col 64}{space 4} .3631025{col 77}{space 3} .8968564
+{txt}{space 18}614  {c |}{col 24}{res}{space 2} .8470559{col 36}{space 2} .1363701{col 47}{space 1}    6.21{col 56}{space 3}0.000{col 64}{space 4} .5797709{col 77}{space 3} 1.114341
+{txt}{space 18}621  {c |}{col 24}{res}{space 2} .7626219{col 36}{space 2} .1539398{col 47}{space 1}    4.95{col 56}{space 3}0.000{col 64}{space 4} .4609004{col 77}{space 3} 1.064343
+{txt}{space 18}628  {c |}{col 24}{res}{space 2} .3642953{col 36}{space 2} .1273359{col 47}{space 1}    2.86{col 56}{space 3}0.004{col 64}{space 4} .1147173{col 77}{space 3} .6138734
+{txt}{space 18}705  {c |}{col 24}{res}{space 2} .5247815{col 36}{space 2} .1455015{col 47}{space 1}    3.61{col 56}{space 3}0.000{col 64}{space 4}  .239599{col 77}{space 3}  .809964
+{txt}{space 18}712  {c |}{col 24}{res}{space 2} .6296484{col 36}{space 2} .1382937{col 47}{space 1}    4.55{col 56}{space 3}0.000{col 64}{space 4} .3585931{col 77}{space 3} .9007037
+{txt}{space 18}719  {c |}{col 24}{res}{space 2} .5966955{col 36}{space 2} .1475232{col 47}{space 1}    4.04{col 56}{space 3}0.000{col 64}{space 4} .3075505{col 77}{space 3} .8858405
+{txt}{space 18}726  {c |}{col 24}{res}{space 2} .6646549{col 36}{space 2}  .148472{col 47}{space 1}    4.48{col 56}{space 3}0.000{col 64}{space 4} .3736501{col 77}{space 3} .9556597
+{txt}{space 18}802  {c |}{col 24}{res}{space 2} .5894094{col 36}{space 2} .1450046{col 47}{space 1}    4.06{col 56}{space 3}0.000{col 64}{space 4} .3052007{col 77}{space 3} .8736181
+{txt}{space 18}809  {c |}{col 24}{res}{space 2} .9309962{col 36}{space 2} .1693078{col 47}{space 1}    5.50{col 56}{space 3}0.000{col 64}{space 4} .5991534{col 77}{space 3} 1.262839
+{txt}{space 18}816  {c |}{col 24}{res}{space 2} .9014796{col 36}{space 2} .1705756{col 47}{space 1}    5.28{col 56}{space 3}0.000{col 64}{space 4} .5671518{col 77}{space 3} 1.235807
+{txt}{space 18}823  {c |}{col 24}{res}{space 2} 1.183666{col 36}{space 2} .1926853{col 47}{space 1}    6.14{col 56}{space 3}0.000{col 64}{space 4} .8060037{col 77}{space 3} 1.561329
+{txt}{space 18}830  {c |}{col 24}{res}{space 2} 1.127222{col 36}{space 2} .1785362{col 47}{space 1}    6.31{col 56}{space 3}0.000{col 64}{space 4} .7772915{col 77}{space 3} 1.477152
+{txt}{space 22} {c |}
+{space 15}cityDV1 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV2 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV3 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV4 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV5 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV6 {c |}{col 24}{res}{space 2}-.4371586{col 36}{space 2} .0829091{col 47}{space 1}   -5.27{col 56}{space 3}0.000{col 64}{space 4}-.5996602{col 77}{space 3}-.2746571
+{txt}{space 15}cityDV7 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 15}cityDV8 {c |}{col 24}{res}{space 2}-.0128526{col 36}{space 2} .0522921{col 47}{space 1}   -0.25{col 56}{space 3}0.806{col 64}{space 4} -.115345{col 77}{space 3} .0896398
+{txt}{space 15}cityDV9 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV10 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV11 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV12 {c |}{col 24}{res}{space 2}-.1026253{col 36}{space 2} .0709626{col 47}{space 1}   -1.45{col 56}{space 3}0.148{col 64}{space 4}-.2417118{col 77}{space 3} .0364612
+{txt}{space 14}cityDV13 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV14 {c |}{col 24}{res}{space 2} .4673009{col 36}{space 2} .1002283{col 47}{space 1}    4.66{col 56}{space 3}0.000{col 64}{space 4} .2708537{col 77}{space 3} .6637482
+{txt}{space 14}cityDV15 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV16 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV17 {c |}{col 24}{res}{space 2} .0284131{col 36}{space 2} .0818472{col 47}{space 1}    0.35{col 56}{space 3}0.728{col 64}{space 4}-.1320072{col 77}{space 3} .1888333
+{txt}{space 14}cityDV18 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV19 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV20 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV21 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV22 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV23 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV24 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV25 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV26 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 14}cityDV27 {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 17}_cons {c |}{col 24}{res}{space 2}-.2226826{col 36}{space 2}  .208739{col 47}{space 1}   -1.07{col 56}{space 3}0.286{col 64}{space 4}-.6318104{col 77}{space 3} .1864452
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. save "/Users/sinclaireschuetze/Desktop/EvictionProject/EvictionStata.dta", replace
+{txt}file /Users/sinclaireschuetze/Desktop/EvictionProject/EvictionStata.dta saved
+
+{com}. exit
